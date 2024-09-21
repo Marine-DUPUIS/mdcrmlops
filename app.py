@@ -1,8 +1,3 @@
-import streamlit as st
-import mlflow
-import mlflow.sklearn
-import numpy as np
-
 # Charger le modèle de régression logistique
 model_uri = 'runs:/1a7169fbbd6846d8ab50ae7171fc7529/logistic_regression_model'
 model = mlflow.sklearn.load_model(model_uri)
